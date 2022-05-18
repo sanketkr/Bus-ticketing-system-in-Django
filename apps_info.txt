@@ -1,0 +1,18 @@
+app1 - > main app
+
+
+
+
+
+
+
+
+
+
+superuser:
+usesrname = sanke
+password = sanke123
+
+users:
+username = sanke1
+pass= Hp@903110

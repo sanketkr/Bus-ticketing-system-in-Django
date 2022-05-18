@@ -1,0 +1,17 @@
+{% extends "app1/base.html" %}
+<!-- yahan app1 directory hai namespace nahin -->
+{% block header %}
+<div class='jumbotron text-center'>
+    {% if user.is_authenticated %}
+    <h2>Welcome, proceed to book your tickets.</h2>
+    <a class="btn btn-large btn-success  " href="booking">Book Tickets</a>
+    {% else %}
+    <h1>Register or Login to book your tickets. </h1>
+    
+    {% endif %}
+</div>
+{% endblock header %}
+{%block content%}
+
+
+{%endblock content%}

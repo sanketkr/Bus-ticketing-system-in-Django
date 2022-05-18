@@ -1,0 +1,26 @@
+{% extends "app1/base.html" %}
+{% block header %}
+<h1 >Bill Pay</h1>
+{% endblock header %}
+{% block content %}
+<div class="jumbotron">
+<h3 class='text-center'><span class="label label-default">{{ bill.date_of_travel }}</span></h3>
+
+<h1 class='text-center'"><span class="label label-default">{{ bill.source }}</span></h1>
+<h2 class='text-center'><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span><h2>
+<h1 class='text-center'><span class="label label-default">{{ bill.destination }}</span></h1>
+</div>
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading">Bill Amount</div>
+  <div class="panel-body">
+        <p>Ticket Id : {}</p>
+        <p>Total Amount: Rs{}</p>
+        <a class="btn btn-large btn-success pull-right " href="https://bitcoin.org">Go to Payment</a>
+  </div>
+</div>
+
+
+{% endblock content %}
